@@ -25,7 +25,7 @@ class listlast4 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel3.jpg"),
+                            image: AssetImage("images/caravela.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -46,7 +46,7 @@ class listlast4 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Taj",
+                                "Caravela ",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -148,7 +148,7 @@ class listlast4 extends StatelessWidget {
                                           height: 4,
                                         ),
                                         Text(
-                                          "non-ac",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -170,7 +170,7 @@ class listlast4 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -205,15 +205,23 @@ class listlast4 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "This property is 2 minutes walk from the beach. Located on Varca beach, Caravela Beach Resort Goa offers beachfront accommodation with private balconies. Overlooking the Arabian Sea, it features a 9 hole golf course, an outdoor pool with a swim-up bar and water sports activities. Guests can enjoy a free Yoga session by the beach conducted by a grand master. The property has an in-house Russian translator. \n ",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -229,7 +237,7 @@ class listlast4 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "adult",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -248,7 +256,7 @@ class listlast4 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "child",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -266,7 +274,7 @@ class listlast4 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "youngster",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -299,12 +307,12 @@ class listlast4 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "4500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -330,7 +338,7 @@ class listlast4 extends StatelessWidget {
                             },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Book Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

@@ -25,7 +25,7 @@ class listlast2 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel3.jpg"),
+                            image: AssetImage("images/diwaclub.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -46,7 +46,7 @@ class listlast2 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Taj",
+                                "Diwa Club ",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -148,7 +148,7 @@ class listlast2 extends StatelessWidget {
                                           height: 4,
                                         ),
                                         Text(
-                                          "non-ac",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -170,7 +170,7 @@ class listlast2 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -205,15 +205,23 @@ class listlast2 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "This property is 6 minutes walk from the beach. The Diwa Club by Alila is a resort within the resort nestled within the picturesque Alila Diwa Goa, a five-star resort in Majorda, South Goa. The Diwa Club includes its own check-in desk, a separate pool with an open – air spa bath, an adjoining restaurant – Bistro that serves all day breakfast and personal host services. \n Luxuriously furnished rooms overlook the private Diwa Pool. The rooms feature a king-size bed with memory foam mattress, private sit-out, a stand-alone bathtub, walk-in wardrobe and separate workspace among other amenities. The two-bedroom suites maximize space and privacy for guests. \n All the Diwa Club amenities include airport transfers, in-room check-in and express check-out, daily Chai-Paani and Sundowners with tapas by the pool and a host of bespoke Alila Experiences. In addition to this, the guests can also avail of all the services and facilities at Alila Diwa Goa that includes the infinity pool, separate kids pool, kid’s club, teen zone and mini theatre.",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -229,7 +237,7 @@ class listlast2 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "adult",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -248,7 +256,7 @@ class listlast2 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "child",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -266,7 +274,7 @@ class listlast2 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "youngster",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -299,12 +307,12 @@ class listlast2 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "3500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -330,7 +338,7 @@ class listlast2 extends StatelessWidget {
                             },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Book Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

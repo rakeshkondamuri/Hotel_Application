@@ -13,6 +13,7 @@ class _BookingPageState extends State<BookingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       body: Container(
           alignment: Alignment.center,
           child: Column(
@@ -28,7 +29,10 @@ class _BookingPageState extends State<BookingPage> {
               Text(
                 "book your hotel now!!",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
               SizedBox(
                 height: 20,
@@ -39,7 +43,7 @@ class _BookingPageState extends State<BookingPage> {
                     //minimumSize: Size(80, 80),
                     textStyle: TextStyle(fontSize: 18),
                     primary: Colors.black,
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(40)),
                         side: BorderSide(color: Colors.red))),

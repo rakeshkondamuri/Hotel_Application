@@ -25,7 +25,7 @@ class listlast3 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel3.jpg"),
+                            image: AssetImage("images/tajfort.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -46,7 +46,7 @@ class listlast3 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Taj",
+                                "Taj Fort",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -148,7 +148,7 @@ class listlast3 extends StatelessWidget {
                                           height: 4,
                                         ),
                                         Text(
-                                          "non-ac",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -170,7 +170,7 @@ class listlast3 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -205,15 +205,23 @@ class listlast3 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "This property is 1 minute walk from the beach. Overlooking the Arabian Sea, Taj Fort Aguada Resort & Spa, Goa offers luxurious 5-star accommodation spread across 73 acres. Boasting 5 dining options, it features a spa, outdoor pool and fitness facilities. Free WiFi is available throughout the property. \n Just 100 m from Fort Aguada, Taj Fort Aguada Resort & Spa, Goa is about 12 km from Vagator Beach and Chapora Fortr ess. It is a 75-minute drive from Goa International Airport and provides free parking. \n Featuring Portuguese designs and private balconies, air-conditioned units are fitted with classic wood furnishings and a DVD player. Private bathrooms have a bathtub, hairdryer and bathrobes.",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -229,7 +237,7 @@ class listlast3 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "adult",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -248,7 +256,7 @@ class listlast3 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "child",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -266,7 +274,7 @@ class listlast3 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "youngster",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -299,12 +307,12 @@ class listlast3 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "4500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -330,7 +338,7 @@ class listlast3 extends StatelessWidget {
                             },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Book Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

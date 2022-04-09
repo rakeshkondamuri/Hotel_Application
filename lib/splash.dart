@@ -28,14 +28,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+          padding: EdgeInsets.all(10),
           alignment: Alignment.center,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                  height: 300,
-                  width: 300,
+                  height: 400,
+                  width: 500,
                   child: Lottie.network(
                       "https://assets10.lottiefiles.com/packages/lf20_okbg8ec7.json")),
               SizedBox(height: 20),

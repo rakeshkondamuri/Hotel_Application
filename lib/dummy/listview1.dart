@@ -25,7 +25,7 @@ class listview1 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel3.jpg"),
+                            image: AssetImage("images/itc.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -46,7 +46,7 @@ class listview1 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Taj",
+                                "ITC Grand Chola ",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -148,7 +148,7 @@ class listview1 extends StatelessWidget {
                                           height: 4,
                                         ),
                                         Text(
-                                          "non-ac",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -170,7 +170,7 @@ class listview1 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -205,15 +205,23 @@ class listview1 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "Situated along Mount Road in Chennai, ITC Grand Chola is 8 km from the Chennai International Airport. It features 10 dining options and an outdoor swimming pool and a fitness centre. The spa and wellness centre, Kayakalp The Royal Spa offers 12 treatment rooms with a wide variety of massages and therapies. \n With 10 signature dining destinations the hotel offers the finest regional, national and global cuisine to delight the gourmet aficionados. International and local delights are served at three meal buffet restaurant Madras Pavilion and at all day dining outlet Cafe Mercara Express. Ottimo Cucina Italiana offers Italian specialties, while Royal Vega features signature Indian vegetarian Thalis. Avartana offers progressive renditions of Southern Indian cuisine. Fabelle- The Luxury Chocolate Boutique has a hearty handcrafted chocolate collection. The Cheroot Malt & Cigar Lounge & Tranquebar serves beverages and short eats. Peshawri serves food from the North-West frontier region of the country and Oriental delights can be relished at the Pan Asian.",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -229,7 +237,7 @@ class listview1 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "adult",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -248,7 +256,7 @@ class listview1 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "child",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -266,7 +274,7 @@ class listview1 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "youngster",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -299,12 +307,12 @@ class listview1 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "2500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -330,7 +338,7 @@ class listview1 extends StatelessWidget {
                             },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Book Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

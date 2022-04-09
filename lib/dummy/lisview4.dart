@@ -1,6 +1,9 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+import '../home_screen.dart';
 
 class listview4 extends StatelessWidget {
   const listview4({Key key}) : super(key: key);
@@ -22,7 +25,7 @@ class listview4 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel6.jpg"),
+                            image: AssetImage("images/novotel.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -43,7 +46,7 @@ class listview4 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Cappuccino",
+                                "Novotel",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -52,13 +55,13 @@ class listview4 extends StatelessWidget {
                               SizedBox(
                                 height: 10,
                               ),
-                              Text(
-                                "With Oat Milk",
-                                style: TextStyle(
-                                  color: Color(0xff919296),
-                                  fontSize: 12,
-                                ),
-                              ),
+                              // Text(
+                              //   "With Oat Milk",
+                              //   style: TextStyle(
+                              //     color: Color(0xff919296),
+                              //     fontSize: 12,
+                              //   ),
+                              // ),
                               SizedBox(
                                 height: 15,
                               ),
@@ -103,16 +106,16 @@ class listview4 extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        SvgPicture.asset(
-                                          "images/coffee-beans.svg",
-                                          color: Color(0xffd17842),
-                                          height: 15,
-                                        ),
+                                        // SvgPicture.asset(
+                                        //   "images/coffee-beans.svg",
+                                        //   color: Color(0xffd17842),
+                                        //   height: 15,
+                                        // ),
                                         SizedBox(
                                           height: 4,
                                         ),
                                         Text(
-                                          "Coffee",
+                                          "AC",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -136,16 +139,16 @@ class listview4 extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        SvgPicture.asset(
-                                          "images/water-drop.svg",
-                                          color: Color(0xffd17842),
-                                          height: 15,
-                                        ),
+                                        // SvgPicture.asset(
+                                        //   "images/water-drop.svg",
+                                        //   color: Color(0xffd17842),
+                                        //   height: 15,
+                                        // ),
                                         SizedBox(
                                           height: 4,
                                         ),
                                         Text(
-                                          "Milk",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -167,7 +170,7 @@ class listview4 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -202,15 +205,23 @@ class listview4 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "Novotel Chennai Chamiers Road - An Accor Brand is located in the city centre near Anna Salai. The hotel is 10-min drive from T Nagar, Marina Beach, business districts of Nungambakkam, Egmore, Adyar, Mylapore and Alwarpet. US Consulate, Apollo Hospital and Shankara Eye Hospital are within a 15 minutes' drive. This pet friendly hotel also features a rooftop swimming pool over looking city skylines and a modern fitness center. The hotel also has state of the art banqueting and co-working options. \n This pet friendly chic European designed hotel rooms are modern and spacious and allows travelers to enjoy the scenic city’s skyline. Each room is furnished with 42 Inch LED TV, tea/coffee making facilities, round the clock in room dining , mini bar, Bluetooth speakers work desk & seating areas, rain shower in baths with fair trade range of bathroom amenities. Complimentary WIFI, parking on-site are at your convenience and a 24 hour state of the art fitness center.",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -226,7 +237,7 @@ class listview4 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "S",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -245,7 +256,7 @@ class listview4 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "M",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -263,7 +274,7 @@ class listview4 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "L",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -296,12 +307,12 @@ class listview4 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "2500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -316,10 +327,18 @@ class listview4 extends StatelessWidget {
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushAndRemoveUntil(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomeScreen()),
+                                  (Route<dynamic> route) => false);
+                              Fluttertoast.showToast(
+                                  msg: "your hotel is booked");
+                            },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Buy Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

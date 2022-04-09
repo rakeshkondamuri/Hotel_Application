@@ -10,7 +10,7 @@ import 'package:flutter_coffeeapp/lastlist/listlast2.dart';
 import 'package:flutter_coffeeapp/lastlist/listlast3.dart';
 import 'package:flutter_coffeeapp/lastlist/listlast4.dart';
 import 'package:flutter_coffeeapp/lastlist/listlast5.dart';
-import 'package:flutter_coffeeapp/signbackground.dart';
+
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 //import 'carouselslide.dart';
@@ -89,7 +89,7 @@ class _firstScreenState extends State<firstScreen>
               ),
               child: TextField(
                 decoration: InputDecoration(
-                    hintText: "Find your coffee...",
+                    hintText: "Find your hotel...",
                     hintStyle: TextStyle(color: Color(0xff3c4046)),
                     border: InputBorder.none,
                     prefixIcon: Icon(
@@ -165,7 +165,15 @@ class _firstScreenState extends State<firstScreen>
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text("Hotels",
+                  style: new TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold)),
+            ),
+            //SizedBox(height: 20),
             // Container(
             //   height: 250,
             //   margin: EdgeInsets.only(bottom: 10),
@@ -204,17 +212,17 @@ class _firstScreenState extends State<firstScreen>
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                              image: AssetImage('images/hotel3.jpg'),
+                              image: AssetImage('images/itc.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
 
                           child: Padding(
                             padding: const EdgeInsets.only(top: 180, left: 15),
-                            child: Text('Novotel,Chennai',
+                            child: Text('ITC Grand Chola,Chennai \n ₹1350',
                                 style: new TextStyle(
                                     fontSize: 20,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold)),
                           ),
                           margin: EdgeInsets.all(10),
@@ -253,16 +261,16 @@ class _firstScreenState extends State<firstScreen>
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                              image: AssetImage('images/hotel4.jpg'),
+                              image: AssetImage('images/parkhyatt.jpg'),
                               fit: BoxFit.fill,
                             ),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.only(top: 150, left: 15),
-                            child: Text('Novotel,Chennai \n ₹',
+                            child: Text('Park Hyatt,Chennai \n ₹1200',
                                 style: new TextStyle(
                                     fontSize: 20,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold)),
                           ),
                           height: MediaQuery.of(context).size.height,
@@ -291,16 +299,16 @@ class _firstScreenState extends State<firstScreen>
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                              image: AssetImage('images/hotel5.jpg'),
+                              image: AssetImage('images/lellapalace.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.only(top: 180, left: 15),
-                            child: Text('Novotel,Chennai',
+                            child: Text('The Leela Palace,Chennai \n ₹1400',
                                 style: new TextStyle(
                                     fontSize: 20,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold)),
                           ),
                           margin: EdgeInsets.all(10),
@@ -329,16 +337,16 @@ class _firstScreenState extends State<firstScreen>
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                              image: AssetImage('images/hotel6.jpg'),
+                              image: AssetImage('images/novotel.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.only(top: 180, left: 15),
-                            child: Text('Novotel,Chennai',
+                            child: Text('Novotel,Chennai \n ₹1240',
                                 style: new TextStyle(
                                     fontSize: 20,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold)),
                           ),
                           margin: EdgeInsets.all(10),
@@ -364,16 +372,16 @@ class _firstScreenState extends State<firstScreen>
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
-                              image: AssetImage('images/hotel2.jpg'),
+                              image: AssetImage('images/tajclubhouse.jpg'),
                               fit: BoxFit.fill,
                             ),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.only(top: 150, left: 15),
-                            child: Text('Novotel,Chennai\n₹',
+                            child: Text('Taj Club House,Chennai \n ₹1100',
                                 style: new TextStyle(
                                     fontSize: 20,
-                                    color: Colors.black,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold)),
                           ),
                           height: MediaQuery.of(context).size.height / 3,
@@ -387,237 +395,457 @@ class _firstScreenState extends State<firstScreen>
                 ),
               ),
             ),
-            SizedBox(
-              height: 250,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Container(
-                    height: 250,
-                    width: 180,
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10)),
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => lastlist1()));
-                      },
-                      child: Container(
-                        height: 50,
-                        width: 50,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
-                            image: AssetImage('images/hotel1.jpg'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        margin: EdgeInsets.all(10),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    height: 250,
-                    width: 180,
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10)),
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => listlast2()));
-                      },
-                      child: Container(
-                        padding: EdgeInsets.only(top: 30),
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('images/hotel2.jpg'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        height: MediaQuery.of(context).size.height,
-                        margin: EdgeInsets.all(10),
-                        //color: Colors.red,
-                      ),
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  Container(
-                    height: 250,
-                    width: 180,
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10)),
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => listlast3()));
-                      },
-                      child: Container(
-                        height: 50,
-                        width: 50,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
-                            image: AssetImage('images/hotel1.jpg'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        margin: EdgeInsets.all(10),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    height: 250,
-                    width: 180,
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10)),
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => listlast4()));
-                      },
-                      child: Container(
-                        height: 50,
-                        width: 50,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
-                            image: AssetImage('images/hotel1.jpg'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        margin: EdgeInsets.all(10),
-                      ),
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  Container(
-                    height: 250,
-                    width: 180,
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10)),
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => listlast5()));
-                      },
-                      child: Container(
-                        padding: EdgeInsets.only(top: 30),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            image: AssetImage('images/hotel2.jpg'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        height: MediaQuery.of(context).size.height / 3,
-                        width: 200, //200
-                        margin: EdgeInsets.all(10),
-                        //color: Colors.red,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              // SizedBox(
-              //   height: 250,
-              //   child: ListView(
-              //     scrollDirection: Axis.horizontal,
-              //     children: [
-              //       Container(
-              //         padding: EdgeInsets.only(top: 30),
-              //         decoration: BoxDecoration(
-              //           image: DecorationImage(
-              //             image: AssetImage('images/hotel1.jpg'),
-              //             fit: BoxFit.fill,
-              //           ),
-              //         ),
-              //         height: MediaQuery.of(context).size.height / 3,
-              //         width: 200, //200
-              //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-              //         //color: Colors.red,
-              //       ),
-              //       Container(
-              //         padding: EdgeInsets.only(top: 30),
-              //         decoration: BoxDecoration(
-              //           image: DecorationImage(
-              //             image: AssetImage('images/hotel1.jpg'),
-              //             fit: BoxFit.fill,
-              //           ),
-              //         ),
-              //         height: MediaQuery.of(context).size.height / 3,
-              //         width: 200, //200
-              //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-              //         //color: Colors.red,
-              //       ),
-              //       Container(
-              //         padding: EdgeInsets.only(top: 30),
-              //         decoration: BoxDecoration(
-              //           image: DecorationImage(
-              //             image: AssetImage('images/hotel1.jpg'),
-              //             fit: BoxFit.fill,
-              //           ),
-              //         ),
-              //         height: MediaQuery.of(context).size.height / 3,
-              //         width: 200, //200
-              //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-              //         //color: Colors.red,
-              //       ),
-              //       GestureDetector(
-              //         onTap: () {
-              //           Navigator.push(
-              //               context,
-              //               MaterialPageRoute(
-              //                   builder: (context) => CoffeeDetailsPage()));
-              //         },
-              //         child: Container(
-              //           padding: EdgeInsets.only(top: 30),
-              //           decoration: BoxDecoration(
-              //             image: DecorationImage(
-              //               image: AssetImage('images/hotel2.jpg'),
-              //               fit: BoxFit.fill,
-              //             ),
-              //           ),
-              //           height: MediaQuery.of(context).size.height / 3,
-              //           width: 200, //200
-              //           margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-              //           //color: Colors.red,
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
-              // Container(
-              //   height: 250,
-              //   margin: EdgeInsets.only(bottom: 10),
-              //   decoration: BoxDecoration(
-              //     image: DecorationImage(
-              //       image: AssetImage('images/hotel1.jpg'),
-              //       fit: BoxFit.fill,
-              //     ),
-              //   ),
-              // ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15.0, top: 5),
+              child: Text("Resorts",
+                  style: new TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold)),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: SizedBox(
+                height: 250,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      height: 250,
+                      width: 300,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => lastlist1()));
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            image: DecorationImage(
+                              image: AssetImage('images/heritagevillage.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 180, left: 15),
+                            child: Text('Heritage Village Resorts \n ₹3500',
+                                style: new TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                          margin: EdgeInsets.all(10),
+                          // child: Container(
+                          //   height: 20,
+                          //   width: 20,
+                          //   decoration: BoxDecoration(
+                          //     borderRadius: BorderRadius.circular(10),
+                          //     image: DecorationImage(
+                          //       image: AssetImage('images/hotel3.jpg'),
+                          //       fit: BoxFit.cover,
+                          //     ),
+                          //   ),
+                          // ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 250,
+                      width: 300,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => listlast2()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.only(top: 30),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            image: DecorationImage(
+                              image: AssetImage('images/diwaclub.jpg'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 150, left: 15),
+                            child: Text('Diwa Club \n ₹1200',
+                                style: new TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                          height: MediaQuery.of(context).size.height,
+                          margin: EdgeInsets.all(10),
+                          //color: Colors.red,
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      height: 250,
+                      width: 300,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => listlast3()));
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            image: DecorationImage(
+                              image: AssetImage('images/tajfort.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 180, left: 15),
+                            child: Text('Taj Fort Resort,Goa \n 4500',
+                                style: new TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                          margin: EdgeInsets.all(10),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 250,
+                      width: 300,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => listlast4()));
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            image: DecorationImage(
+                              image: AssetImage('images/caravela.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 180, left: 15),
+                            child: Text('Caravela,Chennai \n ₹4240',
+                                style: new TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                          margin: EdgeInsets.all(10),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      height: 250,
+                      width: 300,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => listlast5()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.only(top: 30),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                              image: AssetImage('images/goamarriot.jpg'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 150, left: 15),
+                            child: Text('Goa Marriott Resort,Goa \n ₹6000',
+                                style: new TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                          height: MediaQuery.of(context).size.height / 3,
+                          width: 200, //200
+                          margin: EdgeInsets.all(10),
+                          //color: Colors.red,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            // SizedBox(
+            //   height: 250,
+            //   child: ListView(
+            //     scrollDirection: Axis.horizontal,
+            //     children: [
+            //       Container(
+            //         height: 250,
+            //         width: 180,
+            //         decoration: BoxDecoration(
+            //             color: Colors.black,
+            //             borderRadius: BorderRadius.circular(10)),
+            //         child: GestureDetector(
+            //           onTap: () {
+            //             Navigator.push(
+            //                 context,
+            //                 MaterialPageRoute(
+            //                     builder: (context) => lastlist1()));
+            //           },
+            //           child: Container(
+            //             height: 50,
+            //             width: 50,
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(15),
+            //               image: DecorationImage(
+            //                 image: AssetImage('images/hotel1.jpg'),
+            //                 fit: BoxFit.cover,
+            //               ),
+            //             ),
+            //             margin: EdgeInsets.all(10),
+            //           ),
+            //         ),
+            //       ),
+            //       SizedBox(
+            //         width: 10,
+            //       ),
+            //       Container(
+            //         height: 250,
+            //         width: 180,
+            //         decoration: BoxDecoration(
+            //             color: Colors.black,
+            //             borderRadius: BorderRadius.circular(10)),
+            //         child: GestureDetector(
+            //           onTap: () {
+            //             Navigator.push(
+            //                 context,
+            //                 MaterialPageRoute(
+            //                     builder: (context) => listlast2()));
+            //           },
+            //           child: Container(
+            //             padding: EdgeInsets.only(top: 30),
+            //             decoration: BoxDecoration(
+            //               image: DecorationImage(
+            //                 image: AssetImage('images/hotel2.jpg'),
+            //                 fit: BoxFit.fill,
+            //               ),
+            //             ),
+            //             height: MediaQuery.of(context).size.height,
+            //             margin: EdgeInsets.all(10),
+            //             //color: Colors.red,
+            //           ),
+            //         ),
+            //       ),
+            //       SizedBox(width: 10),
+            //       Container(
+            //         height: 250,
+            //         width: 180,
+            //         decoration: BoxDecoration(
+            //             color: Colors.black,
+            //             borderRadius: BorderRadius.circular(10)),
+            //         child: GestureDetector(
+            //           onTap: () {
+            //             Navigator.push(
+            //                 context,
+            //                 MaterialPageRoute(
+            //                     builder: (context) => listlast3()));
+            //           },
+            //           child: Container(
+            //             height: 50,
+            //             width: 50,
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(15),
+            //               image: DecorationImage(
+            //                 image: AssetImage('images/hotel1.jpg'),
+            //                 fit: BoxFit.cover,
+            //               ),
+            //             ),
+            //             margin: EdgeInsets.all(10),
+            //           ),
+            //         ),
+            //       ),
+            //       SizedBox(
+            //         width: 10,
+            //       ),
+            //       Container(
+            //         height: 250,
+            //         width: 180,
+            //         decoration: BoxDecoration(
+            //             color: Colors.black,
+            //             borderRadius: BorderRadius.circular(10)),
+            //         child: GestureDetector(
+            //           onTap: () {
+            //             Navigator.push(
+            //                 context,
+            //                 MaterialPageRoute(
+            //                     builder: (context) => listlast4()));
+            //           },
+            //           child: Container(
+            //             height: 50,
+            //             width: 50,
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(15),
+            //               image: DecorationImage(
+            //                 image: AssetImage('images/hotel1.jpg'),
+            //                 fit: BoxFit.cover,
+            //               ),
+            //             ),
+            //             margin: EdgeInsets.all(10),
+            //           ),
+            //         ),
+            //       ),
+            //       SizedBox(width: 10),
+            //       Container(
+            //         height: 250,
+            //         width: 180,
+            //         decoration: BoxDecoration(
+            //             color: Colors.black,
+            //             borderRadius: BorderRadius.circular(10)),
+            //         child: GestureDetector(
+            //           onTap: () {
+            //             Navigator.push(
+            //                 context,
+            //                 MaterialPageRoute(
+            //                     builder: (context) => listlast5()));
+            //           },
+            //           child: Container(
+            //             padding: EdgeInsets.only(top: 30),
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(10),
+            //               image: DecorationImage(
+            //                 image: AssetImage('images/hotel2.jpg'),
+            //                 fit: BoxFit.fill,
+            //               ),
+            //             ),
+            //             height: MediaQuery.of(context).size.height / 3,
+            //             width: 200, //200
+            //             margin: EdgeInsets.all(10),
+            //             //color: Colors.red,
+            //           ),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            //   // SizedBox(
+            //   //   height: 250,
+            //   //   child: ListView(
+            //   //     scrollDirection: Axis.horizontal,
+            //   //     children: [
+            //   //       Container(
+            //   //         padding: EdgeInsets.only(top: 30),
+            //   //         decoration: BoxDecoration(
+            //   //           image: DecorationImage(
+            //   //             image: AssetImage('images/hotel1.jpg'),
+            //   //             fit: BoxFit.fill,
+            //   //           ),
+            //   //         ),
+            //   //         height: MediaQuery.of(context).size.height / 3,
+            //   //         width: 200, //200
+            //   //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
+            //   //         //color: Colors.red,
+            //   //       ),
+            //   //       Container(
+            //   //         padding: EdgeInsets.only(top: 30),
+            //   //         decoration: BoxDecoration(
+            //   //           image: DecorationImage(
+            //   //             image: AssetImage('images/hotel1.jpg'),
+            //   //             fit: BoxFit.fill,
+            //   //           ),
+            //   //         ),
+            //   //         height: MediaQuery.of(context).size.height / 3,
+            //   //         width: 200, //200
+            //   //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
+            //   //         //color: Colors.red,
+            //   //       ),
+            //   //       Container(
+            //   //         padding: EdgeInsets.only(top: 30),
+            //   //         decoration: BoxDecoration(
+            //   //           image: DecorationImage(
+            //   //             image: AssetImage('images/hotel1.jpg'),
+            //   //             fit: BoxFit.fill,
+            //   //           ),
+            //   //         ),
+            //   //         height: MediaQuery.of(context).size.height / 3,
+            //   //         width: 200, //200
+            //   //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
+            //   //         //color: Colors.red,
+            //   //       ),
+            //   //       GestureDetector(
+            //   //         onTap: () {
+            //   //           Navigator.push(
+            //   //               context,
+            //   //               MaterialPageRoute(
+            //   //                   builder: (context) => CoffeeDetailsPage()));
+            //   //         },
+            //   //         child: Container(
+            //   //           padding: EdgeInsets.only(top: 30),
+            //   //           decoration: BoxDecoration(
+            //   //             image: DecorationImage(
+            //   //               image: AssetImage('images/hotel2.jpg'),
+            //   //               fit: BoxFit.fill,
+            //   //             ),
+            //   //           ),
+            //   //           height: MediaQuery.of(context).size.height / 3,
+            //   //           width: 200, //200
+            //   //           margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
+            //   //           //color: Colors.red,
+            //   //         ),
+            //   //       ),
+            //   //     ],
+            //   //   ),
+            //   // ),
+            //   // Container(
+            //   //   height: 250,
+            //   //   margin: EdgeInsets.only(bottom: 10),
+            //   //   decoration: BoxDecoration(
+            //   //     image: DecorationImage(
+            //   //       image: AssetImage('images/hotel1.jpg'),
+            //   //       fit: BoxFit.fill,
+            //   //     ),
+            //   //   ),
+            //   // ),
+            // ),
           ],
         ));
   }

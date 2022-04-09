@@ -1,6 +1,9 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+import '../home_screen.dart';
 
 class listview3 extends StatelessWidget {
   const listview3({Key key}) : super(key: key);
@@ -22,7 +25,7 @@ class listview3 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel5.jpg"),
+                            image: AssetImage("images/lellapalace.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -43,7 +46,7 @@ class listview3 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Cappuccino",
+                                "The Lella Palace ",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -52,13 +55,13 @@ class listview3 extends StatelessWidget {
                               SizedBox(
                                 height: 10,
                               ),
-                              Text(
-                                "With Oat Milk",
-                                style: TextStyle(
-                                  color: Color(0xff919296),
-                                  fontSize: 12,
-                                ),
-                              ),
+                              // Text(
+                              //   "With Oat Milk",
+                              //   style: TextStyle(
+                              //     color: Color(0xff919296),
+                              //     fontSize: 12,
+                              //   ),
+                              // ),
                               SizedBox(
                                 height: 15,
                               ),
@@ -103,16 +106,16 @@ class listview3 extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        SvgPicture.asset(
-                                          "images/coffee-beans.svg",
-                                          color: Color(0xffd17842),
-                                          height: 15,
-                                        ),
+                                        // SvgPicture.asset(
+                                        //   "images/coffee-beans.svg",
+                                        //   color: Color(0xffd17842),
+                                        //   height: 15,
+                                        // ),
                                         SizedBox(
                                           height: 4,
                                         ),
                                         Text(
-                                          "Coffee",
+                                          "AC",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -136,16 +139,16 @@ class listview3 extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        SvgPicture.asset(
-                                          "images/water-drop.svg",
-                                          color: Color(0xffd17842),
-                                          height: 15,
-                                        ),
+                                        // SvgPicture.asset(
+                                        //   "images/water-drop.svg",
+                                        //   color: Color(0xffd17842),
+                                        //   height: 15,
+                                        // ),
                                         SizedBox(
                                           height: 4,
                                         ),
                                         Text(
-                                          "Milk",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -167,7 +170,7 @@ class listview3 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -202,15 +205,23 @@ class listview3 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "Spread across 4.8 acres of peaceful land, the luxurious Leela Palace Chennai offers an outdoor pool and a fitness centre. Its grand and well-designed rooms enjoy 24-hour room services. Free parking is available. \n Overlooking the sea, the spacious air-conditioned guestrooms all come with a 40-inch flat-screen TV, Blu-ray player, well-stocked minibar and a sofa. \n  Leela Palace Chennai is 2 km from St. Thomas Basilica and Marina Beach. It is 4 km from Parthasarathy Temple. Anna International Airport and Kamaraj Domestic Airport are 16 km away.",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -226,7 +237,7 @@ class listview3 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "S",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -245,7 +256,7 @@ class listview3 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "M",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -263,7 +274,7 @@ class listview3 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "L",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -296,12 +307,12 @@ class listview3 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "2500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -316,10 +327,18 @@ class listview3 extends StatelessWidget {
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushAndRemoveUntil(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomeScreen()),
+                                  (Route<dynamic> route) => false);
+                              Fluttertoast.showToast(
+                                  msg: "your hotel is booked");
+                            },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Buy Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

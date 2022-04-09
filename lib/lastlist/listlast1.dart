@@ -25,7 +25,7 @@ class lastlist1 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel3.jpg"),
+                            image: AssetImage("images/heritagevillage.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -46,7 +46,7 @@ class lastlist1 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Taj",
+                                "Heritage Village Resorts",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -148,7 +148,7 @@ class lastlist1 extends StatelessWidget {
                                           height: 4,
                                         ),
                                         Text(
-                                          "non-ac",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -170,7 +170,7 @@ class lastlist1 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -205,15 +205,23 @@ class lastlist1 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "The Heritage Village Resort & Spa Goa is nestled along the pristine white sands of Arossim Beach.The property boasts a traditional Indian spa. \n Heritage Village Resort & Spa Goa is a 20-minute drive from Dabolim Airport. It is 15 minutes by car from Margao City. \n  Rooms are fitted with balconies and come fitted with tea and coffee making facilities. Select rooms include a minibar and flat-screen TV. Wi-Fi is available.",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -229,7 +237,7 @@ class lastlist1 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "adult",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -248,7 +256,7 @@ class lastlist1 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "child",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -266,7 +274,7 @@ class lastlist1 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "youngster",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -299,12 +307,12 @@ class lastlist1 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "3500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -330,7 +338,7 @@ class lastlist1 extends StatelessWidget {
                             },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Book Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

@@ -25,109 +25,157 @@ class SpecialCoffeeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey,
-        appBar: AppBar(
-          title: Text("favorites"),
-          centerTitle: true,
-          foregroundColor: Colors.black,
-          backgroundColor: Colors.white,
-        ),
-        body: ListView(
-          padding: EdgeInsets.all(20),
-          children: [
-            //SizedBox(height: 20),
-            // Padding(padding: EdgeInsets.only(left: 10, right: 10)),
-            Container(
+      backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: Text("favorites"),
+        centerTitle: true,
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+      ),
+      body: ListView(
+        padding: EdgeInsets.all(20),
+        children: [
+          //SizedBox(height: 20),
+          // Padding(padding: EdgeInsets.only(left: 10, right: 10)),
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: Container(
+              padding: EdgeInsets.all(10),
               height: 250,
-              width: 300,
+              margin: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(20)),
-              child: Container(
-                padding: EdgeInsets.all(10),
-                height: 250,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
-                    image: AssetImage('images/hotel1.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-            Container(
-              height: 250,
-              width: 300,
-              decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(20)),
-              child: Container(
-                padding: EdgeInsets.all(10),
-                height: 250,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
-                    image: AssetImage('images/hotel1.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-
-            Container(
-              height: 250,
-              width: 300,
-              decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(20)),
-              child: Container(
-                padding: EdgeInsets.all(10),
-                height: 250,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
-                    image: AssetImage('images/hotel1.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-
-            Container(
-              height: 250,
-              width: 300,
-              decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(20)),
-              child: Container(
-                padding: EdgeInsets.all(10),
-                height: 250,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
-                    image: AssetImage('images/hotel1.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-
-            Container(
-              height: 250,
-              margin: EdgeInsets.only(bottom: 10),
-              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
-                  image: AssetImage('images/hotel1.jpg'),
+                  image: AssetImage('images/itc.jpg'),
                   fit: BoxFit.fill,
                 ),
               ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 160, left: 15),
+                child: Text('ITC Grand Chola,Chennai \n ₹1350',
+                    style: new TextStyle(
+                        fontSize: 20,
+                        color: Color.fromARGB(255, 233, 231, 231),
+                        fontWeight: FontWeight.bold)),
+              ),
             ),
-          ],
-        ));
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: Container(
+              padding: EdgeInsets.all(10),
+              height: 250,
+              margin: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                image: DecorationImage(
+                  image: AssetImage('images/parkhyatt.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 160, left: 15),
+                child: Text('park Hyatt,Chennai \n ₹1350',
+                    style: new TextStyle(
+                        fontSize: 20,
+                        color: Color.fromARGB(255, 233, 231, 231),
+                        fontWeight: FontWeight.bold)),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: Container(
+              padding: EdgeInsets.all(10),
+              height: 250,
+              margin: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                image: DecorationImage(
+                  image: AssetImage('images/caravela.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 160, left: 15),
+                child: Text('caravela,Goa \n ₹4500',
+                    style: new TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold)),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: Container(
+              padding: EdgeInsets.all(10),
+              height: 250,
+              margin: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                image: DecorationImage(
+                  image: AssetImage('images/goamarriot.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 160, left: 15),
+                child: Text('Goa Marroit,Goa \n ₹4500',
+                    style: new TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold)),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: Container(
+              padding: EdgeInsets.all(10),
+              height: 250,
+              margin: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                image: DecorationImage(
+                  image: AssetImage('images/tajfort.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 160, left: 15),
+                child: Text('Taj Fort Resorts,Goa \n ₹6000',
+                    style: new TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold)),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
     // return ListView.builder(
     //     shrinkWrap: true,
     //     itemCount: specialImages.length,

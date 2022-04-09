@@ -33,7 +33,7 @@ class _offersState extends State<offers> {
             margin: EdgeInsets.only(bottom: 10),
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('images/hotel1.jpg'),
+                image: AssetImage('images/offers1.jpg'),
                 fit: BoxFit.fill,
               ),
             ),
@@ -48,7 +48,7 @@ class _offersState extends State<offers> {
                   padding: EdgeInsets.only(top: 30),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/hotel1.jpg'),
+                      image: AssetImage('images/offer2.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -61,7 +61,7 @@ class _offersState extends State<offers> {
                   padding: EdgeInsets.only(top: 30),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/hotel1.jpg'),
+                      image: AssetImage('images/offer5.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -76,7 +76,7 @@ class _offersState extends State<offers> {
                   padding: EdgeInsets.only(top: 30),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/hotel1.jpg'),
+                      image: AssetImage('images/offer4.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -89,7 +89,7 @@ class _offersState extends State<offers> {
                   padding: EdgeInsets.only(top: 30),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/hotel1.jpg'),
+                      image: AssetImage('images/offer6.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -101,16 +101,40 @@ class _offersState extends State<offers> {
               ],
             ),
           ),
+          Container(
+            height: 250,
+            margin: EdgeInsets.only(bottom: 10),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/offerlast1.jpg'),
+                fit: BoxFit.fill,
+              ),
+            ),
+          ),
           SizedBox(
             height: 250,
             child: ListView(
+              padding: EdgeInsets.all(5),
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
+                  //padding: EdgeInsets.only(top: 30),
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('images/offer81.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  height: MediaQuery.of(context).size.height / 3,
+                  width: 200, //200
+                  //margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
+                  //color: Colors.red,
+                ),
+                Container(
                   padding: EdgeInsets.only(top: 30),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/hotel1.jpg'),
+                      image: AssetImage('images/offer8.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -123,20 +147,7 @@ class _offersState extends State<offers> {
                   padding: EdgeInsets.only(top: 30),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/hotel1.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  height: MediaQuery.of(context).size.height / 3,
-                  width: 200, //200
-                  margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-                  //color: Colors.red,
-                ),
-                Container(
-                  padding: EdgeInsets.only(top: 30),
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('images/hotel1.jpg'),
+                      image: AssetImage('images/offer9.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -147,16 +158,16 @@ class _offersState extends State<offers> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => CoffeeDetailsPage()));
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => CoffeeDetailsPage()));
                   },
                   child: Container(
                     padding: EdgeInsets.only(top: 30),
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('images/hotel1.jpg'),
+                        image: AssetImage('images/offer10.png'),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -169,16 +180,16 @@ class _offersState extends State<offers> {
               ],
             ),
           ),
-          Container(
-            height: 250,
-            margin: EdgeInsets.only(bottom: 10),
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('images/hotel1.jpg'),
-                fit: BoxFit.fill,
-              ),
-            ),
-          ),
+          // Container(
+          //   height: 250,
+          //   margin: EdgeInsets.only(bottom: 10),
+          //   decoration: BoxDecoration(
+          //     image: DecorationImage(
+          //       image: AssetImage('images/offerlast.jpg'),
+          //       fit: BoxFit.fill,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

@@ -1,6 +1,9 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+import '../home_screen.dart';
 
 class listview2 extends StatelessWidget {
   const listview2({Key key}) : super(key: key);
@@ -22,7 +25,7 @@ class listview2 extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         image: DecorationImage(
-                            image: AssetImage("images/hotel4.jpg"),
+                            image: AssetImage("images/parkhyatt.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
@@ -43,7 +46,7 @@ class listview2 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Cappuccino",
+                                "Park Hyatt",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -52,13 +55,13 @@ class listview2 extends StatelessWidget {
                               SizedBox(
                                 height: 10,
                               ),
-                              Text(
-                                "With Oat Milk",
-                                style: TextStyle(
-                                  color: Color(0xff919296),
-                                  fontSize: 12,
-                                ),
-                              ),
+                              // Text(
+                              //   "With Oat Milk",
+                              //   style: TextStyle(
+                              //     color: Color(0xff919296),
+                              //     fontSize: 12,
+                              //   ),
+                              // ),
                               SizedBox(
                                 height: 15,
                               ),
@@ -103,16 +106,16 @@ class listview2 extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        SvgPicture.asset(
-                                          "images/coffee-beans.svg",
-                                          color: Color(0xffd17842),
-                                          height: 15,
-                                        ),
+                                        // SvgPicture.asset(
+                                        //   "images/coffee-beans.svg",
+                                        //   color: Color(0xffd17842),
+                                        //   height: 15,
+                                        // ),
                                         SizedBox(
                                           height: 4,
                                         ),
                                         Text(
-                                          "Coffee",
+                                          "AC",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -136,16 +139,16 @@ class listview2 extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        SvgPicture.asset(
-                                          "images/water-drop.svg",
-                                          color: Color(0xffd17842),
-                                          height: 15,
-                                        ),
+                                        // SvgPicture.asset(
+                                        //   "images/water-drop.svg",
+                                        //   color: Color(0xffd17842),
+                                        //   height: 15,
+                                        // ),
                                         SizedBox(
                                           height: 4,
                                         ),
                                         Text(
-                                          "Milk",
+                                          "Non-Ac",
                                           style: TextStyle(
                                               color: Color(0xff919296),
                                               fontSize: 10,
@@ -167,7 +170,7 @@ class listview2 extends StatelessWidget {
                                 width: 120,
                                 child: Center(
                                     child: Text(
-                                  "Medium Roasted",
+                                  "Hotel",
                                   style: TextStyle(
                                       color: Color(0xff919296),
                                       fontSize: 12,
@@ -202,15 +205,23 @@ class listview2 extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Text(
-                      "A cappuccino is a coffee-based drink made primarily from espresso and milk.",
-                      style: TextStyle(color: Color(0xff919296), fontSize: 15),
+                    Container(
+                      height: 150,
+                      child: SingleChildScrollView(
+                        //scrollDirection: Axis.vertical,
+
+                        child: Text(
+                          "The 5-star Park Hyatt Chennai features a spa with rooftop infinity pool and fitness centre offering panoramic city views and views of the Guindy Forest Reserve. The hotel has its own restaurant and luxurious rooms. \n Located next to the Governor's Residence, Park Hyatt Chennai is conveniently situated near Phoenix Marketcity Mall at 3.5 km, Chennai Trade Centre 7.2 km, IIT Madras 3.2 km, Anna University 3.9 km, OMR IT Corridor 3.6 km, DLF IT Park 7 km, US Consulate 8.3 km while Chennai International Airport is 9 km from the hotel. Leading hospitals like MIOT, Apollo, Rainbow Children’s hospital and Global Hospitals are within 7 km range of the hotel.\n Spacious and indulgent guestrooms offer floor-to-ceiling windows, boasting views of the city greenery or the Guindy Forest Reserve. The hotel offers some of the city’s largest room sizes, fitted with marble flooring, exquisite décor, thoughtful amenities and a Nespresso coffee machine.",
+                          style:
+                              TextStyle(color: Color(0xff919296), fontSize: 15),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      "Size",
+                      "people!",
                       style: TextStyle(
                           color: Color(0xff919296),
                           fontSize: 15,
@@ -226,7 +237,7 @@ class listview2 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "S",
+                            "Adult",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -245,7 +256,7 @@ class listview2 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "M",
+                            "youngster",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -263,7 +274,7 @@ class listview2 extends StatelessWidget {
                           width: 110,
                           child: Center(
                               child: Text(
-                            "L",
+                            "child",
                             style: TextStyle(
                               color: Color(0xff919296),
                               fontSize: 18,
@@ -296,12 +307,12 @@ class listview2 extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  r'$',
+                                  r'₹',
                                   style: TextStyle(
                                       color: Color(0xffd17842), fontSize: 21),
                                 ),
                                 Text(
-                                  " 4.20",
+                                  "2500",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 21),
                                 )
@@ -316,10 +327,18 @@ class listview2 extends StatelessWidget {
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushAndRemoveUntil(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomeScreen()),
+                                  (Route<dynamic> route) => false);
+                              Fluttertoast.showToast(
+                                  msg: "your hotel is booked");
+                            },
                             color: Color(0xffd17842),
                             child: Text(
-                              "Buy Now",
+                              "book Now",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

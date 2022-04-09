@@ -63,7 +63,7 @@ class _EditProfileuiState extends State<EditProfileui> {
                             BoxShadow(
                                 spreadRadius: 2,
                                 blurRadius: 10,
-                                color: Colors.white.withOpacity(0.1))
+                                color: Colors.black.withOpacity(0.1))
                           ],
                           shape: BoxShape.circle,
                           image: DecorationImage(
@@ -101,25 +101,31 @@ class _EditProfileuiState extends State<EditProfileui> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   OutlinedButton(
-                    onPressed: () {},
-                    child: Text("cancel",
-                        style: TextStyle(
-                            fontSize: 15,
-                            letterSpacing: 2,
-                            color: Colors.black)),
-                    style: OutlinedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(horizontal: 50),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20))),
-                  ),
+                      onPressed: () {},
+                      child: Text("cancel",
+                          style: TextStyle(
+                              fontSize: 15,
+                              letterSpacing: 2,
+                              color: Colors.black)),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.white,
+                          padding: EdgeInsets.symmetric(horizontal: 50),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)))
+                      // style: OutlinedButton.styleFrom(
+                      //     primary: Colors.white,
+                      //     padding: EdgeInsets.symmetric(horizontal: 50),
+                      //     shape: RoundedRectangleBorder(
+                      //         borderRadius: BorderRadius.circular(20))),
+                      ),
                   ElevatedButton(
                     onPressed: () {
                       Fluttertoast.showToast(
-                          msg: "This is Center Short Toast",
+                          msg: "profile updated",
                           toastLength: Toast.LENGTH_SHORT,
-                          gravity: ToastGravity.CENTER,
+                          gravity: ToastGravity.BOTTOM,
                           timeInSecForIosWeb: 1,
-                          backgroundColor: Colors.red,
+                          backgroundColor: Colors.black,
                           textColor: Colors.white,
                           fontSize: 16.0);
                     },
@@ -127,9 +133,9 @@ class _EditProfileuiState extends State<EditProfileui> {
                         style: TextStyle(
                             fontSize: 15,
                             letterSpacing: 2,
-                            color: Colors.white)),
+                            color: Colors.black)),
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.blue,
+                        primary: Colors.white,
                         padding: EdgeInsets.symmetric(horizontal: 50),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20))),
@@ -166,7 +172,7 @@ class _EditProfileuiState extends State<EditProfileui> {
               hintStyle: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: Colors.white,
               ))),
     );
   }
