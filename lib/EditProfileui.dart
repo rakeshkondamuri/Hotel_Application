@@ -24,24 +24,7 @@ class _EditProfileuiState extends State<EditProfileui> {
                   letterSpacing: 1,
                   color: Colors.black)),
         ),
-        //titleTextStyle: ,
-
-        // leading: IconButton(
-        //   // icon: Icon(
-        //   //   Icons.arrow_back,
-        //   //   color: Colors.black,
-        //   // ),
-        //   // onPressed: () {},
-        // ),
-        actions: [
-          // IconButton(
-          //   icon: Icon(
-          //     Icons.settings,
-          //     color: Colors.black,
-          //   ),
-          //   onPressed: () {},
-          // )
-        ],
+        actions: [],
       ),
       body: Container(
         padding: EdgeInsets.only(left: 15, top: 20, right: 15),
@@ -91,11 +74,11 @@ class _EditProfileuiState extends State<EditProfileui> {
                 ),
               ),
               SizedBox(height: 30),
-              buildTextField("Fullname", "Demon", false),
-              buildTextField("email", "damon90@gmail.com", false),
+              buildTextField("Fullname", "Kondamuri Rakesh Krihsna", false),
+              buildTextField("email", "rakeshkondamuri97@gmail.com", false),
               buildTextField("mobile number", "7013583674", false),
               //buildTextField("password", "**********", true),
-              buildTextField("Location", "newyork", false),
+              buildTextField("Location", "Chennai", false),
               SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

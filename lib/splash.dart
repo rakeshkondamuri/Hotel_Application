@@ -5,7 +5,7 @@ import 'package:lottie/lottie.dart';
 import 'getstarted.dart';
 import 'home_screen.dart';
 import 'login.dart';
-import 'logindummy.dart';
+import 'login.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key key}) : super(key: key);

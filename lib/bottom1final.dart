@@ -1,6 +1,3 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_coffeeapp/dummy/listview1.dart';
@@ -10,11 +7,6 @@ import 'package:flutter_coffeeapp/lastlist/listlast2.dart';
 import 'package:flutter_coffeeapp/lastlist/listlast3.dart';
 import 'package:flutter_coffeeapp/lastlist/listlast4.dart';
 import 'package:flutter_coffeeapp/lastlist/listlast5.dart';
-
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
-//import 'carouselslide.dart';
-import 'coffee_details_page.dart';
 import 'dummy/listview2.dart';
 import 'dummy/listview3.dart';
 import 'dummy/lisview4.dart';
@@ -40,6 +32,21 @@ class _firstScreenState extends State<firstScreen>
     'images/slide6.jpg',
     'images/slide7.jpg'
   ];
+  List<String> images = [
+    "images/hotel1.jpg",
+    "images/hotel2.jpg",
+    "images/hotel3.jpg",
+    "images/hotel4.jpg",
+  ];
+  List<String> hotel_names = [
+    "Novotel Chennai Chamiers Road",
+    "Holiday Inn Chennai OMR IT Expressway",
+    "The Madras Grand",
+    "Welcomhotel by ITC Hotels"
+  ];
+
+  List<double> price = [4949, 3890, 2879, 5500];
+
   @override
   void initState() {
     tabController = TabController(length: 10, vsync: this);
@@ -53,7 +60,6 @@ class _firstScreenState extends State<firstScreen>
           padding: EdgeInsets.only(top: 30, left: 10, right: 10, bottom: 10),
           children: [
             Container(
-                //padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: Colors.grey, //Color(0xff1b2027),
                   borderRadius: BorderRadius.circular(10),
@@ -67,9 +73,6 @@ class _firstScreenState extends State<firstScreen>
                             builder: (context) => NavigationDrawer())),
                     color: Colors.black //Color(0xff4d4f52),
                     )),
-            // SizedBox(
-            //   height: 5,
-            // ),
             Text(
               "  Find the best hotel!!",
               style: TextStyle(
@@ -151,7 +154,7 @@ class _firstScreenState extends State<firstScreen>
                     autoPlay: true,
                     reverse: false,
                     pageSnapping: false,
-                    enableInfiniteScroll: false,
+                    enableInfiniteScroll: true,
                     enlargeCenterPage: true,
                     enlargeStrategy: CenterPageEnlargeStrategy.height,
                     viewportFraction: 1,
@@ -173,19 +176,6 @@ class _firstScreenState extends State<firstScreen>
                       color: Colors.white,
                       fontWeight: FontWeight.bold)),
             ),
-            //SizedBox(height: 20),
-            // Container(
-            //   height: 250,
-            //   margin: EdgeInsets.only(bottom: 10),
-            //   decoration: BoxDecoration(
-            //     image: DecorationImage(
-            //       image: AssetImage('images/hotel1.jpg'),
-            //       fit: BoxFit.fill,
-            //     ),
-            //   ),
-            // ),
-
-            //];
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: SizedBox(
@@ -216,7 +206,6 @@ class _firstScreenState extends State<firstScreen>
                               fit: BoxFit.cover,
                             ),
                           ),
-
                           child: Padding(
                             padding: const EdgeInsets.only(top: 180, left: 15),
                             child: Text('ITC Grand Chola,Chennai \n ₹1350',
@@ -226,17 +215,6 @@ class _firstScreenState extends State<firstScreen>
                                     fontWeight: FontWeight.bold)),
                           ),
                           margin: EdgeInsets.all(10),
-                          // child: Container(
-                          //   height: 20,
-                          //   width: 20,
-                          //   decoration: BoxDecoration(
-                          //     borderRadius: BorderRadius.circular(10),
-                          //     image: DecorationImage(
-                          //       image: AssetImage('images/hotel3.jpg'),
-                          //       fit: BoxFit.cover,
-                          //     ),
-                          //   ),
-                          // ),
                         ),
                       ),
                     ),
@@ -275,7 +253,6 @@ class _firstScreenState extends State<firstScreen>
                           ),
                           height: MediaQuery.of(context).size.height,
                           margin: EdgeInsets.all(10),
-                          //color: Colors.red,
                         ),
                       ),
                     ),
@@ -387,7 +364,6 @@ class _firstScreenState extends State<firstScreen>
                           height: MediaQuery.of(context).size.height / 3,
                           width: 200, //200
                           margin: EdgeInsets.all(10),
-                          //color: Colors.red,
                         ),
                       ),
                     ),
@@ -436,7 +412,6 @@ class _firstScreenState extends State<firstScreen>
                               fit: BoxFit.cover,
                             ),
                           ),
-
                           child: Padding(
                             padding: const EdgeInsets.only(top: 180, left: 15),
                             child: Text('Heritage Village Resorts \n ₹3500',
@@ -446,17 +421,6 @@ class _firstScreenState extends State<firstScreen>
                                     fontWeight: FontWeight.bold)),
                           ),
                           margin: EdgeInsets.all(10),
-                          // child: Container(
-                          //   height: 20,
-                          //   width: 20,
-                          //   decoration: BoxDecoration(
-                          //     borderRadius: BorderRadius.circular(10),
-                          //     image: DecorationImage(
-                          //       image: AssetImage('images/hotel3.jpg'),
-                          //       fit: BoxFit.cover,
-                          //     ),
-                          //   ),
-                          // ),
                         ),
                       ),
                     ),
@@ -495,7 +459,6 @@ class _firstScreenState extends State<firstScreen>
                           ),
                           height: MediaQuery.of(context).size.height,
                           margin: EdgeInsets.all(10),
-                          //color: Colors.red,
                         ),
                       ),
                     ),
@@ -607,7 +570,6 @@ class _firstScreenState extends State<firstScreen>
                           height: MediaQuery.of(context).size.height / 3,
                           width: 200, //200
                           margin: EdgeInsets.all(10),
-                          //color: Colors.red,
                         ),
                       ),
                     ),
@@ -615,237 +577,6 @@ class _firstScreenState extends State<firstScreen>
                 ),
               ),
             ),
-            // SizedBox(
-            //   height: 250,
-            //   child: ListView(
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       Container(
-            //         height: 250,
-            //         width: 180,
-            //         decoration: BoxDecoration(
-            //             color: Colors.black,
-            //             borderRadius: BorderRadius.circular(10)),
-            //         child: GestureDetector(
-            //           onTap: () {
-            //             Navigator.push(
-            //                 context,
-            //                 MaterialPageRoute(
-            //                     builder: (context) => lastlist1()));
-            //           },
-            //           child: Container(
-            //             height: 50,
-            //             width: 50,
-            //             decoration: BoxDecoration(
-            //               borderRadius: BorderRadius.circular(15),
-            //               image: DecorationImage(
-            //                 image: AssetImage('images/hotel1.jpg'),
-            //                 fit: BoxFit.cover,
-            //               ),
-            //             ),
-            //             margin: EdgeInsets.all(10),
-            //           ),
-            //         ),
-            //       ),
-            //       SizedBox(
-            //         width: 10,
-            //       ),
-            //       Container(
-            //         height: 250,
-            //         width: 180,
-            //         decoration: BoxDecoration(
-            //             color: Colors.black,
-            //             borderRadius: BorderRadius.circular(10)),
-            //         child: GestureDetector(
-            //           onTap: () {
-            //             Navigator.push(
-            //                 context,
-            //                 MaterialPageRoute(
-            //                     builder: (context) => listlast2()));
-            //           },
-            //           child: Container(
-            //             padding: EdgeInsets.only(top: 30),
-            //             decoration: BoxDecoration(
-            //               image: DecorationImage(
-            //                 image: AssetImage('images/hotel2.jpg'),
-            //                 fit: BoxFit.fill,
-            //               ),
-            //             ),
-            //             height: MediaQuery.of(context).size.height,
-            //             margin: EdgeInsets.all(10),
-            //             //color: Colors.red,
-            //           ),
-            //         ),
-            //       ),
-            //       SizedBox(width: 10),
-            //       Container(
-            //         height: 250,
-            //         width: 180,
-            //         decoration: BoxDecoration(
-            //             color: Colors.black,
-            //             borderRadius: BorderRadius.circular(10)),
-            //         child: GestureDetector(
-            //           onTap: () {
-            //             Navigator.push(
-            //                 context,
-            //                 MaterialPageRoute(
-            //                     builder: (context) => listlast3()));
-            //           },
-            //           child: Container(
-            //             height: 50,
-            //             width: 50,
-            //             decoration: BoxDecoration(
-            //               borderRadius: BorderRadius.circular(15),
-            //               image: DecorationImage(
-            //                 image: AssetImage('images/hotel1.jpg'),
-            //                 fit: BoxFit.cover,
-            //               ),
-            //             ),
-            //             margin: EdgeInsets.all(10),
-            //           ),
-            //         ),
-            //       ),
-            //       SizedBox(
-            //         width: 10,
-            //       ),
-            //       Container(
-            //         height: 250,
-            //         width: 180,
-            //         decoration: BoxDecoration(
-            //             color: Colors.black,
-            //             borderRadius: BorderRadius.circular(10)),
-            //         child: GestureDetector(
-            //           onTap: () {
-            //             Navigator.push(
-            //                 context,
-            //                 MaterialPageRoute(
-            //                     builder: (context) => listlast4()));
-            //           },
-            //           child: Container(
-            //             height: 50,
-            //             width: 50,
-            //             decoration: BoxDecoration(
-            //               borderRadius: BorderRadius.circular(15),
-            //               image: DecorationImage(
-            //                 image: AssetImage('images/hotel1.jpg'),
-            //                 fit: BoxFit.cover,
-            //               ),
-            //             ),
-            //             margin: EdgeInsets.all(10),
-            //           ),
-            //         ),
-            //       ),
-            //       SizedBox(width: 10),
-            //       Container(
-            //         height: 250,
-            //         width: 180,
-            //         decoration: BoxDecoration(
-            //             color: Colors.black,
-            //             borderRadius: BorderRadius.circular(10)),
-            //         child: GestureDetector(
-            //           onTap: () {
-            //             Navigator.push(
-            //                 context,
-            //                 MaterialPageRoute(
-            //                     builder: (context) => listlast5()));
-            //           },
-            //           child: Container(
-            //             padding: EdgeInsets.only(top: 30),
-            //             decoration: BoxDecoration(
-            //               borderRadius: BorderRadius.circular(10),
-            //               image: DecorationImage(
-            //                 image: AssetImage('images/hotel2.jpg'),
-            //                 fit: BoxFit.fill,
-            //               ),
-            //             ),
-            //             height: MediaQuery.of(context).size.height / 3,
-            //             width: 200, //200
-            //             margin: EdgeInsets.all(10),
-            //             //color: Colors.red,
-            //           ),
-            //         ),
-            //       ),
-            //     ],
-            //   ),
-            //   // SizedBox(
-            //   //   height: 250,
-            //   //   child: ListView(
-            //   //     scrollDirection: Axis.horizontal,
-            //   //     children: [
-            //   //       Container(
-            //   //         padding: EdgeInsets.only(top: 30),
-            //   //         decoration: BoxDecoration(
-            //   //           image: DecorationImage(
-            //   //             image: AssetImage('images/hotel1.jpg'),
-            //   //             fit: BoxFit.fill,
-            //   //           ),
-            //   //         ),
-            //   //         height: MediaQuery.of(context).size.height / 3,
-            //   //         width: 200, //200
-            //   //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-            //   //         //color: Colors.red,
-            //   //       ),
-            //   //       Container(
-            //   //         padding: EdgeInsets.only(top: 30),
-            //   //         decoration: BoxDecoration(
-            //   //           image: DecorationImage(
-            //   //             image: AssetImage('images/hotel1.jpg'),
-            //   //             fit: BoxFit.fill,
-            //   //           ),
-            //   //         ),
-            //   //         height: MediaQuery.of(context).size.height / 3,
-            //   //         width: 200, //200
-            //   //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-            //   //         //color: Colors.red,
-            //   //       ),
-            //   //       Container(
-            //   //         padding: EdgeInsets.only(top: 30),
-            //   //         decoration: BoxDecoration(
-            //   //           image: DecorationImage(
-            //   //             image: AssetImage('images/hotel1.jpg'),
-            //   //             fit: BoxFit.fill,
-            //   //           ),
-            //   //         ),
-            //   //         height: MediaQuery.of(context).size.height / 3,
-            //   //         width: 200, //200
-            //   //         margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-            //   //         //color: Colors.red,
-            //   //       ),
-            //   //       GestureDetector(
-            //   //         onTap: () {
-            //   //           Navigator.push(
-            //   //               context,
-            //   //               MaterialPageRoute(
-            //   //                   builder: (context) => CoffeeDetailsPage()));
-            //   //         },
-            //   //         child: Container(
-            //   //           padding: EdgeInsets.only(top: 30),
-            //   //           decoration: BoxDecoration(
-            //   //             image: DecorationImage(
-            //   //               image: AssetImage('images/hotel2.jpg'),
-            //   //               fit: BoxFit.fill,
-            //   //             ),
-            //   //           ),
-            //   //           height: MediaQuery.of(context).size.height / 3,
-            //   //           width: 200, //200
-            //   //           margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-            //   //           //color: Colors.red,
-            //   //         ),
-            //   //       ),
-            //   //     ],
-            //   //   ),
-            //   // ),
-            //   // Container(
-            //   //   height: 250,
-            //   //   margin: EdgeInsets.only(bottom: 10),
-            //   //   decoration: BoxDecoration(
-            //   //     image: DecorationImage(
-            //   //       image: AssetImage('images/hotel1.jpg'),
-            //   //       fit: BoxFit.fill,
-            //   //     ),
-            //   //   ),
-            //   // ),
-            // ),
           ],
         ));
   }

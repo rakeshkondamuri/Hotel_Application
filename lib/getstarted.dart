@@ -1,8 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_coffeeapp/signupdummy.dart';
-
-import 'logindummy.dart';
+import 'login.dart';
 
 class getstarted extends StatefulWidget {
   const getstarted({Key key}) : super(key: key);
@@ -54,14 +51,7 @@ class _getstartedState extends State<getstarted> {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => logindummy()));
-                  // setState(() {
-                  //   if (_pageState != 0) {
-                  //     _pageState = 0;
-                  //   } else {
-                  //     _pageState = 1;
-                  //   }
-                  // });
+                      MaterialPageRoute(builder: (context) => login()));
                 },
                 child: Container(
                   margin: EdgeInsets.all(32),

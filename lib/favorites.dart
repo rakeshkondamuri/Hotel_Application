@@ -1,138 +1,196 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_coffeeapp/dummy/listview2.dart';
+import 'package:flutter_coffeeapp/lastlist/listlast3.dart';
+import 'package:flutter_coffeeapp/lastlist/listlast5.dart';
+
+import 'dummy/listview1.dart';
+import 'lastlist/listlast4.dart';
 
 class favorites extends StatelessWidget {
   List<String> specialImages = [
-    "images/kaffebase-coffeeshop-uAx74-kc5Kw-unsplash.jpg",
-    "images/coffee.jpg",
-    "images/lattee.jpg",
-    "images/kaffebase-coffeeshop-uAx74-kc5Kw-unsplash.jpg",
+    "images/hotel2.jpg",
     "images/coffee.jpg",
     "images/lattee.jpg"
   ];
-
-  List<String> coffeeName = [
-    "Caramel Macchiato ",
-    "Turkish Coffee",
-    "Cafe Cubanoi",
-    "Caramel Macchiato ",
-    "Turkish Coffee",
-    "Cafe Cubanoi",
-  ];
-
-  List<String> ingredients = [
-    "Ice, Cramel Sauce",
-    "Turkish coffee, Sugar",
-    "Ground Coffee, Water",
-    "Ice, Cramel Sauce",
-    "Turkish coffee, Sugar",
-    "Ground Coffee, Water"
-  ];
-
-  List<String> price = ["5.00", "7.50", "9.00", "5.00", "7.50", "9.00"];
-
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return Scaffold(
+      backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: Text("favorites"),
+        centerTitle: true,
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+      ),
+      body: ListView(
         padding: EdgeInsets.all(20),
-        shrinkWrap: true,
-        itemCount: specialImages.length,
-        itemBuilder: (context, index) {
-          return Column(
-            children: [
-              Container(
-                height: 140,
-                width: MediaQuery.of(context).size.width,
-                child: Row(
-                  children: [
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      height: 120,
-                      width: 150,
-                      decoration: BoxDecoration(
-                          color: Colors.blue,
-                          image: DecorationImage(
-                              image: AssetImage(specialImages[index]),
-                              fit: BoxFit.cover),
-                          borderRadius: BorderRadius.circular(20)),
-                    ),
-                    SizedBox(
-                      width: 15,
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          coffeeName[index],
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 6,
-                        ),
-                        Text(
-                          ingredients[index],
-                          style:
-                              TextStyle(color: Color(0xff919293), fontSize: 12),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  r'$ ',
-                                  style: TextStyle(
-                                      color: Color(0xffd17842),
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20),
-                                ),
-                                Text(
-                                  "${price[index]}",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              width: 80,
-                            ),
-                            // Container(
-                            //   height: 30,
-                            //   width: 30,
-                            //   decoration: BoxDecoration(
-                            //       color: Color(0xffd17842),
-                            //       borderRadius: BorderRadius.circular(10)),
-                            //   // child: Icon(
-                            //   //   Icons.add,
-                            //   //   color: Colors.white,
-                            //   //   size: 20,
-                            //   // )
-                            // )
-                          ],
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+        children: [
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => listview1()));
+              },
+              child: Container(
+                padding: EdgeInsets.all(10),
+                height: 250,
+                margin: EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                    color: Color(0xff141921),
-                    borderRadius: BorderRadius.circular(20)),
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                    image: AssetImage('images/itc.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 160, left: 15),
+                  child: Text('ITC Grand Chola,Chennai \n ₹1350',
+                      style: new TextStyle(
+                          fontSize: 20,
+                          color: Color.fromARGB(255, 233, 231, 231),
+                          fontWeight: FontWeight.bold)),
+                ),
               ),
-              SizedBox(
-                height: 15,
+            ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => listview2()));
+              },
+              child: Container(
+                padding: EdgeInsets.all(10),
+                height: 250,
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                    image: AssetImage('images/parkhyatt.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 160, left: 15),
+                  child: Text('park Hyatt,Chennai \n ₹1350',
+                      style: new TextStyle(
+                          fontSize: 20,
+                          color: Color.fromARGB(255, 233, 231, 231),
+                          fontWeight: FontWeight.bold)),
+                ),
               ),
-            ],
-          );
-        });
+            ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => listlast4()));
+              },
+              child: Container(
+                padding: EdgeInsets.all(10),
+                height: 250,
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                    image: AssetImage('images/caravela.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 160, left: 15),
+                  child: Text('caravela,Goa \n ₹4500',
+                      style: new TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold)),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => listlast5()));
+              },
+              child: Container(
+                padding: EdgeInsets.all(10),
+                height: 250,
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                    image: AssetImage('images/goamarriot.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 160, left: 15),
+                  child: Text('Goa Marroit,Goa \n ₹4500',
+                      style: new TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold)),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.black, borderRadius: BorderRadius.circular(20)),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => listlast3()));
+              },
+              child: Container(
+                padding: EdgeInsets.all(10),
+                height: 250,
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                    image: AssetImage('images/tajfort.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 160, left: 15),
+                  child: Text('Taj Fort Resorts,Goa \n ₹6000',
+                      style: new TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold)),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

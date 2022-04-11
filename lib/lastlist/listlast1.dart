@@ -4,12 +4,14 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import '../home_screen.dart';
+import '../mapscreen.dart';
 
 class lastlist1 extends StatelessWidget {
   const lastlist1({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    String todo = "images/heritagevillage.jpg";
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
@@ -166,19 +168,44 @@ class lastlist1 extends StatelessWidget {
                                 height: 10,
                               ),
                               Container(
-                                height: 37,
-                                width: 120,
-                                child: Center(
-                                    child: Text(
-                                  "Hotel",
-                                  style: TextStyle(
-                                      color: Color(0xff919296),
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.bold),
-                                )),
-                                decoration: BoxDecoration(
-                                    color: Color(0xff101419),
-                                    borderRadius: BorderRadius.circular(8)),
+                                child: OutlinedButton(
+                                  style: OutlinedButton.styleFrom(
+                                      fixedSize: const Size(120, 40),
+                                      textStyle: TextStyle(fontSize: 14),
+                                      primary: Colors.black,
+                                      backgroundColor: Colors.grey,
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(40)),
+                                          side: BorderSide(color: Colors.red))),
+                                  child: Text("Show on Map",
+                                      textAlign: TextAlign.center),
+                                  onPressed: () {
+                                    Navigator.pushAndRemoveUntil(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => MapScreen(),
+                                          settings: RouteSettings(
+                                            arguments: todo,
+                                          ),
+                                        ),
+                                        (Route<dynamic> route) => false);
+                                    //signin();
+                                  },
+                                ),
+                                // height: 37,
+                                // width: 120,
+                                // child: Center(
+                                //     child: Text(
+                                //   "Hotel",
+                                //   style: TextStyle(
+                                //       color: Color(0xff919296),
+                                //       fontSize: 12,
+                                //       fontWeight: FontWeight.bold),
+                                // )),
+                                // decoration: BoxDecoration(
+                                //     color: Color(0xff101419),
+                                //     borderRadius: BorderRadius.circular(8)),
                               ),
                             ],
                           )

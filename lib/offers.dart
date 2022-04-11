@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_coffeeapp/coffee_details_page.dart';
-//import 'package:flutter_coffeeapp/offerimage.dart';
 
 class offers extends StatefulWidget {
   const offers({Key key}) : super(key: key);
@@ -10,8 +8,6 @@ class offers extends StatefulWidget {
 }
 
 class _offersState extends State<offers> {
-  //DataHome object = DataHome();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,7 +137,6 @@ class _offersState extends State<offers> {
                   height: MediaQuery.of(context).size.height / 3,
                   width: 200, //200
                   margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-                  //color: Colors.red,
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 30),
@@ -154,15 +149,9 @@ class _offersState extends State<offers> {
                   height: MediaQuery.of(context).size.height / 3,
                   width: 200, //200
                   margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-                  //color: Colors.red,
                 ),
                 GestureDetector(
-                  onTap: () {
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => CoffeeDetailsPage()));
-                  },
+                  onTap: () {},
                   child: Container(
                     padding: EdgeInsets.only(top: 30),
                     decoration: BoxDecoration(
@@ -174,51 +163,13 @@ class _offersState extends State<offers> {
                     height: MediaQuery.of(context).size.height / 3,
                     width: 200, //200
                     margin: EdgeInsets.only(bottom: 10, left: 10, right: 0),
-                    //color: Colors.red,
                   ),
                 ),
               ],
             ),
           ),
-          // Container(
-          //   height: 250,
-          //   margin: EdgeInsets.only(bottom: 10),
-          //   decoration: BoxDecoration(
-          //     image: DecorationImage(
-          //       image: AssetImage('images/offerlast.jpg'),
-          //       fit: BoxFit.fill,
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );
   }
 }
-//   Widget build(BuildContext context) {
-//     return Container(
-//         margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
-//         height: 300, //150
-//         width: double.infinity,
-//         child: ListView.builder(
-//             scrollDirection: Axis.horizontal,
-//             itemCount: object.getData.length,
-//             itemBuilder: (context, index) {
-//               return InkWell(
-//                   onTap: () {},
-//                   child: Container(
-//                     margin: EdgeInsets.symmetric(horizontal: 2),
-//                     height: 200,
-//                     width: 250,
-//                     decoration: BoxDecoration(
-//                       borderRadius: BorderRadius.circular(12),
-//                       image: DecorationImage(
-//                           image: AssetImage(
-//                             object.getData[index].imageUrl,
-//                           ),
-//                           fit: BoxFit.cover),
-//                     ),
-//                   ));
-//             }));
-//   }
-// }

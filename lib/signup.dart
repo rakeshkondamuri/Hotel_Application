@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import 'home_screen.dart';
-import 'logindummy.dart';
+import 'login.dart';
 
 class signupdummy extends StatefulWidget {
   const signupdummy({Key key}) : super(key: key);
@@ -38,16 +38,9 @@ class _signupdummyState extends State<signupdummy> {
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    // Container(
-                    //   padding: EdgeInsets.symmetric(horizontal: 32),
-                    //   child: Center(
-                    //     child: Image.asset("images/splash_bg.png"),
-                    //   ),
-                    // ),
                     SizedBox(
                       height: 80,
                     ),
-                    //Padding(padding: EdgeInsets.all(20)),
                     Container(
                       padding: EdgeInsets.only(left: 20, right: 20),
                       child: TextFormField(
@@ -72,13 +65,6 @@ class _signupdummyState extends State<signupdummy> {
                         ),
                       ),
                     ),
-                    // InputWithIcon(
-                    //   icon: Icons.email,
-                    //   hint: "Enter Email...",
-                    // ),
-                    // SizedBox(
-                    //   height: 20,
-                    // ),
                     Container(
                       padding: EdgeInsets.all(20),
                       child: TextFormField(
@@ -131,10 +117,8 @@ class _signupdummyState extends State<signupdummy> {
                         Container(
                           child: GestureDetector(
                             onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (_) => logindummy()));
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (_) => login()));
                             },
                             child: Text(
                               "login here",
@@ -143,34 +127,9 @@ class _signupdummyState extends State<signupdummy> {
                             ),
                           ),
                           alignment: Alignment.center,
-                        )
-
-                        // SizedBox(width: 20, height: 15),
-                        // GestureDetector(
-                        //   onTap: () {},
-                        //   child: OutlinedButton(
-                        //     style: OutlinedButton.styleFrom(
-                        //         fixedSize: const Size(320, 50),
-                        //         textStyle: TextStyle(fontSize: 18),
-                        //         primary: Colors.black,
-                        //         backgroundColor: Colors.transparent,
-                        //         shape: RoundedRectangleBorder(
-                        //             borderRadius: BorderRadius.all(Radius.circular(40)),
-                        //             side: BorderSide(color: Colors.red))),
-                        //     child:
-                        //         Text("create new account", textAlign: TextAlign.center),
-                        //     onPressed: () {
-                        //       //Navigator.push(context, MaterialPageRoute(builder: (context)=>s));
-                        //     },
-                        //   ),
-                        // ),
-                        //)
+                        ),
                       ],
                     ),
-                    // InputWithIcon(
-                    //   icon: Icons.vpn_key,
-                    //   hint: "Enter Password...",
-                    // )
                   ],
                 ),
               )));

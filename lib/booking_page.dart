@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import 'bottom1final.dart';
+//import 'firstscreen.dart';
 import 'home_screen.dart';
 
 class BookingPage extends StatefulWidget {
@@ -14,6 +14,14 @@ class _BookingPageState extends State<BookingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: const Text(
+          'Bookings',
+          style: TextStyle(color: Colors.black),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+      ),
       body: Container(
           alignment: Alignment.center,
           child: Column(
@@ -40,7 +48,6 @@ class _BookingPageState extends State<BookingPage> {
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
                     fixedSize: const Size(200, 50),
-                    //minimumSize: Size(80, 80),
                     textStyle: TextStyle(fontSize: 18),
                     primary: Colors.black,
                     backgroundColor: Colors.white,
@@ -53,10 +60,8 @@ class _BookingPageState extends State<BookingPage> {
                       context,
                       MaterialPageRoute(builder: (context) => HomeScreen()),
                       (Route<dynamic> route) => false);
-                  //signin();
                 },
               ),
-              //Text("by VITESH & RAKESH"),
             ],
           )),
     );
